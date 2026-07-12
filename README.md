@@ -42,27 +42,35 @@ weather-logger/
 
 ## Usage
 
-Run the main script to fetch and log weather for the cities defined in `project.py`:
+### Log weather for a city
 
 ```bash
-python3 project.py
+python3 project.py log Toronto 43.7 -79.42
 ```
 
-This will print each logged reading, followed by everything currently stored in the database.
+### View all logs
 
-### Adding more cities
-
-Cities are defined in `project.py` as a dictionary of coordinates:
-
-```python
-CITIES = {
-    "Toronto": (43.7, -79.42),
-    "Vancouver": (49.28, -123.12),
-    "Montreal": (45.5, -73.57),
-}
+```bash
+python3 project.py view
 ```
 
-Add any city by including its latitude and longitude.
+### View logs for a specific city
+
+```bash
+python3 project.py view --city Toronto
+```
+
+### Clear all logs
+
+```bash
+python3 project.py clear
+```
+
+### Help
+
+```bash
+python3 project.py --help
+```
 
 ### Querying and clearing logs
 
