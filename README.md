@@ -12,6 +12,8 @@ A command-line tool that fetches live weather data from a free API and logs it t
 - Fully unit tested, including mocked API tests (no network calls needed to run the test suite)
 
 ## Project Structure
+
+```
 weather-logger/
 ├── project.py          # Main entry point — fetches and logs weather for defined cities
 ├── weather_api.py       # Handles requests to the Open-Meteo API
@@ -21,6 +23,7 @@ weather-logger/
 ├── test_weather_api.py      # Unit tests for weather_api.py (uses mocking)
 ├── requirements.txt
 └── README.md
+```
 
 ## Setup
 
